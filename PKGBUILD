@@ -4,7 +4,7 @@
 
 pkgname=mkinitcpio
 pkgver=0.5.19.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Advanced, modular initramfs image creation utility"
 arch=(i686 x86_64)
 url="http://www.archlinux.org/"
@@ -22,4 +22,6 @@ build()
 {
   cd $startdir/src/${pkgname}-${pkgver}
   ./install.sh $startdir/pkg
+  mkdir -p $pkgdir/usr/share
+  mv $pkgdir/usr/man $pkgdir/usr/share
 }
