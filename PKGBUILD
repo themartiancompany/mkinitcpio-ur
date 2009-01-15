@@ -3,7 +3,7 @@
 # Maintainer: Aaron Griffin <aaron@archlinux.org>
 
 pkgname=mkinitcpio
-pkgver=0.5.20
+pkgver=0.5.21
 pkgrel=1
 pkgdesc="Advanced, modular initramfs image creation utility"
 arch=(i686 x86_64)
@@ -12,11 +12,12 @@ license=('GPL')
 groups=('base')
 depends=('klibc>=1.5.14-2' 'klibc-extras>=2.5' 'klibc-udev>=130'
          'gen-init-cpio' 'klibc-module-init-tools' 'coreutils'
-         'bash' 'klibc-kbd' 'findutils' 'sed' 'grep')
+         'bash' 'klibc-kbd' 'findutils' 'sed' 'grep'
+         'filesystem>=2009.01' 'udev' 'gzip')
 source=(ftp://ftp.archlinux.org/other/${pkgname}/${pkgname}-${pkgver}.tar.bz2)
 backup=(etc/mkinitcpio.conf)
 replaces=('mkinitrd' 'mkinitramfs')
-md5sums=('88da3c3834a828d6bc3c7df63814cefc')
+md5sums=('d6673e8966d7c1f224c767d79434ed6b')
 
 build()
 {
