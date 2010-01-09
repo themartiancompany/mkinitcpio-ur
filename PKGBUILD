@@ -3,8 +3,8 @@
 # Maintainer: Aaron Griffin <aaron@archlinux.org>
 
 pkgname=mkinitcpio
-pkgver=0.5.26
-pkgrel=2
+pkgver=0.5.27
+pkgrel=1
 pkgdesc="Advanced, modular initramfs image creation utility"
 arch=(any)
 url="http://www.archlinux.org/"
@@ -19,12 +19,10 @@ optdepends=('xz-utils: Use lzma compression for the initramfs image'
 source=(ftp://ftp.archlinux.org/other/${pkgname}/${pkgname}-${pkgver}.tar.gz)
 backup=(etc/mkinitcpio.conf)
 replaces=('mkinitrd' 'mkinitramfs')
-md5sums=('b92f57d6b7132dc9cfdaa97fe46c93b2')
+md5sums=('616f1f76e5a5cde085dec81335c660c7')
 
 build()
 {
   cd $srcdir/${pkgname}-${pkgver}
-  ./install.sh $pkgdir || return 1
-  mkdir -p $pkgdir/usr/share
-  mv $pkgdir/usr/man $pkgdir/usr/share
+  make DESTDIR="${pkgdir}" install
 }
