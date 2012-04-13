@@ -3,7 +3,7 @@
 
 pkgname=mkinitcpio
 pkgver=0.8.7
-pkgrel=1
+pkgrel=2
 pkgdesc="Modular initramfs image creation utility"
 arch=('any')
 url="http://www.archlinux.org/"
@@ -21,5 +21,9 @@ sha256sums=('2bfa98845a48e87988bd90c5dbc39ddcc8eb1b6dfc30969a60101952c2ef7d91')
 
 package() {
   make -C "$pkgname-$pkgver" DESTDIR="$pkgdir" install
+
+  # compat symlink
+  install -dm755 "$pkgdir/sbin"
+  ln -s /usr/bin/mkinitcpio "$pkgdir/sbin/mkinitcpio"
 }
 
