@@ -5,7 +5,7 @@
 
 pkgname=mkinitcpio
 pkgver=38
-pkgrel=1
+pkgrel=2
 pkgdesc="Modular initramfs image creation utility"
 arch=('any')
 url='https://gitlab.archlinux.org/archlinux/mkinitcpio/mkinitcpio'
@@ -17,7 +17,7 @@ conflicts=(
   'systemd<255.4-2'
   'cryptsetup<2.7.0-2'
   'mdadm<4.3-2'
-  'lvm2<2.03.23-2'
+  'lvm2<2.03.23-3'
 )
 optdepends=('gzip: Use gzip compression for the initramfs image'
             'xz: Use lzma or xz compression for the initramfs image'

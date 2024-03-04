@@ -1,7 +1,7 @@
 pkgbase = mkinitcpio
 	pkgdesc = Modular initramfs image creation utility
 	pkgver = 38
-	pkgrel = 1
+	pkgrel = 2
 	url = https://gitlab.archlinux.org/archlinux/mkinitcpio/mkinitcpio
 	install = mkinitcpio.install
 	arch = any
@@ -33,7 +33,7 @@ pkgbase = mkinitcpio
 	conflicts = systemd<255.4-2
 	conflicts = cryptsetup<2.7.0-2
 	conflicts = mdadm<4.3-2
-	conflicts = lvm2<2.03.23-2
+	conflicts = lvm2<2.03.23-3
 	backup = etc/mkinitcpio.conf
 	source = https://sources.archlinux.org/other/mkinitcpio/mkinitcpio-38.tar.gz
 	source = https://sources.archlinux.org/other/mkinitcpio/mkinitcpio-38.tar.gz.sig
