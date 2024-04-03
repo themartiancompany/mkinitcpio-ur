@@ -9,6 +9,7 @@ pkgbase = mkinitcpio
 	checkdepends = bats
 	checkdepends = bats-assert
 	checkdepends = lzop
+	makedepends = asciidoc
 	depends = awk
 	depends = mkinitcpio-busybox>=1.19.4-2
 	depends = kmod

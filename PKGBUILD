@@ -13,6 +13,7 @@ license=('GPL')
 depends=('awk' 'mkinitcpio-busybox>=1.19.4-2' 'kmod' 'util-linux>=2.23' 'libarchive' 'coreutils'
          'bash' 'binutils' 'diffutils' 'findutils' 'grep' 'filesystem>=2011.10-1' 'zstd' 'systemd')
 checkdepends=('bats' 'bats-assert' 'lzop')
+makedepends=('asciidoc')
 conflicts=(
   'systemd<255.4-2'
   'cryptsetup<2.7.0-3'
