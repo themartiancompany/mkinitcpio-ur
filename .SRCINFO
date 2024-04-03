@@ -3,7 +3,6 @@ pkgbase = mkinitcpio
 	pkgver = 38.1
 	pkgrel = 1
 	url = https://gitlab.archlinux.org/archlinux/mkinitcpio/mkinitcpio
-	install = mkinitcpio.install
 	arch = any
 	license = GPL
 	checkdepends = bats
