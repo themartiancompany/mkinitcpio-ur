@@ -3,12 +3,12 @@ pkgbase = mkinitcpio
 	pkgver = 38.1
 	pkgrel = 1
 	url = https://gitlab.archlinux.org/archlinux/mkinitcpio/mkinitcpio
-	install = mkinitcpio.install
 	arch = any
-	license = GPL
+	license = GPL-2.0-only
 	checkdepends = bats
 	checkdepends = bats-assert
 	checkdepends = lzop
+	makedepends = asciidoc
 	depends = awk
 	depends = mkinitcpio-busybox>=1.19.4-2
 	depends = kmod
