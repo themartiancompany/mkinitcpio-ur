@@ -1,7 +1,7 @@
 pkgbase = mkinitcpio
 	pkgdesc = Modular initramfs image creation utility
 	pkgver = 39.2
-	pkgrel = 3
+	pkgrel = 4
 	url = https://gitlab.archlinux.org/archlinux/mkinitcpio/mkinitcpio
 	arch = any
 	license = GPL-2.0-only
